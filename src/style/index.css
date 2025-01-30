@@ -114,6 +114,77 @@ header nav ul {
   flex-flow: column;
 } */
 
+/* mobile navbar */
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  color: #222;
+}
+.mobile-nav {
+  display: none;
+  width: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.mobile-nav-container {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-nav-container a {
+  border-bottom: 1px solid #ccc;
+}
+.accordion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1px;
+  background-color: white;
+  /* border: 1px solid #ccc; */
+}
+.mobile-nav h1 {
+  font-size: 3rem;
+}
+/* .accordion button {
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.4s ease;
+} */
+.accordion-button {
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.4s ease;
+}
+
+/* .accordion-button:hover {
+  background-color: #ccc;
+} */
+
+.accordion-content {
+  display: none;
+  flex-direction: column;
+
+  padding: 10px;
+  /*  background-color: white; */
+  /* border-top: 1px solid #ccc; */
+}
+
 /* Main */
 
 main {
