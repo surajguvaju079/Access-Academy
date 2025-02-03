@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/src/style/index.css" />
     <link rel="stylesheet" href="/src/style/components/menubar/menubar.css" />
     <link
@@ -14,6 +20,7 @@
       rel="stylesheet"
       href="/src/style/components/imageslider/slider.css"
     />
+    
     <title>Access Academy</title>
   </head>
   <body>
@@ -21,7 +28,7 @@
       <div>
         <img src="/images/logo.jpg" alt="Access Academy" />
         <h1>ACCESS ACADEMY</h1>
-        <div class="container" onclick="myFunction(this)">
+        <div class="menu-container" onclick="myFunction(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
@@ -105,7 +112,7 @@
       <section class="introduction">
         <div class="introduction-container">
           <h1>Welcome to Access Academy!</h1>
-          <div>
+          
             <p>
               At Access Academy, we believe in the power of education to
               transform lives and build a brighter future. Established in
@@ -114,7 +121,8 @@
               compassionate, and capable individuals.
             </p>
             <br />
-            <p>
+            <div id="read-more">
+            <p >
               We are committed to providing a well-rounded education that
               combines academic excellence with extracurricular opportunities.
               Our dedicated team of educators, state-of-the-art facilities, and
@@ -129,11 +137,48 @@
               discover their potential and make meaningful contributions to the
               world.
             </p>
+            <br />
+          </div>
+          <button onclick="handleRead()" id="button-text"><span>Read More</span></button>
           </div>
         </div>
       </section>
-      <!--   <section class="slider">
-        <div class="slides">
+
+      <section class="slider">
+        <div><h1>Features</h1></div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/images/slider_images/slide1.jpg" class="d-block w-100" alt="...">
+              <div class="image-features"><h1>100% Success</h1></div>
+            </div>
+            <div class="carousel-item">
+              <img src="/images/slider_images/slide2.jpg" class="d-block w-100" alt="...">
+              <div class="image-features"><h1>Environment Friendly</h1></div>
+            </div>
+            <div class="carousel-item">
+              <img src="/images/slider_images/slide3.jpg" class="d-block w-100" alt="...">
+              <div class="image-features"><h1>Experienced Faculty</h1></div>
+            </div>
+            <div class="carousel-item">
+              <img src="/images/slider_images/slide4.jpg" class="d-block w-100" alt="...">
+              <div class="image-features"><h1>Sustainable Environment</h1></div>
+            </div>
+            <div class="carousel-item">
+              <img src="/images/slider_images/slide5.jpg" class="d-block w-100" alt="...">
+              <div class="image-features"><h1>Productive</h1></div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- <div class="slides">
           <div class="slide">
             <img src="/images/slider_images/slide1.jpg" alt="Slide 1" />
           </div>
@@ -143,19 +188,44 @@
           <div class="slide">
             <img src="/images/slider_images/slide3.jpg" alt="Slide 3" />
           </div>
+          <div class="slide">
+            <img src="/images/slider_images/slide4.jpg" alt="Slide 4" />
+          </div>
+          <div class="slide">
+            <img src="/images/slider_images/slide5.jpg" alt="Slide 5" />
+          </div> -->
         </div>
 
-        <div class="features-card">
+        <!-- <div class="features-card">
           <div class="card"><h2>Experienced Faculties</h2></div>
           <div class="card"><h2>Well Equipped Canteen</h2></div>
           <div class="card"><h2>Library</h2></div>
           <div class="card"><h2>Environment Friendly</h2></div>
           <div class="card"><h2>Extra Curricular activities</h2></div>
-        </div> 
-      </section> -->
+        </div>  -->
+      </section>
+
+      <section id="message-from-principal">
+        <div id="message-container">
+          <div><h1 style="font-weight: bold;font-size: clamp(2rem,8vw,3rem);">Message From the Principal</h1></div>
+          <div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            <img src="/images/principal.jpg" alt="principal">
+            <h2>Nirajan Silwal</h2>
+          </div>
+          <div class="principal-words">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo accusamus est officia voluptatum fugiat. Natus perferendis minima, ullam, culpa animi voluptatem ipsa voluptas expedita, doloremque voluptates delectus cupiditate iusto. Illo!</p>
+          </div>
+        </div>
+        <!-- <div class="card" style="width: 18rem;">
+          <img src="/images/principal.jpg" class="card-img-top" alt="principal">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div> -->
+      </section>
     </main>
     <footer class="footer" id="footer">
-      <p>Email: support@squarelearn.com | Phone: +977 0156432 9841951005</p>
+      <p>Email: accessacademy@gmail.com | Phone: +977 0156432 9841951005</p>
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -167,5 +237,10 @@
     <script src="/src/script/index.js"></script>
     <script src="/src/style/components/imageslider/slider.js"></script>
     <script src="/src/style/components/common/copyright.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
