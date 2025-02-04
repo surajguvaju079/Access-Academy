@@ -29,4 +29,8 @@
   .container {
     display: none;
   }
+
+  .mobile-nav {
+    display: none;
+  }
 }
