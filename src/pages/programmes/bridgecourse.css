@@ -4,6 +4,180 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+<<<<<<< HEAD
+=======
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  /*  overflow-x: hidden; */
+  /* background: #333; */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header div img {
+  width: clamp(40px, 5vw, 140px);
+  height: clamp(40px, 5vw, 140px);
+}
+header div h1 {
+  color: #222;
+  font-size: clamp(1rem, 5vw, 3rem);
+  margin: 1rem;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #333; */
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: clamp(0.1rem, 2vw, 2rem);
+  align-items: center;
+  list-style: none;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.nav-link {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: #d8d0d0c8;
+}
+
+.drop-down {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-down .drop-down-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.drop-down:hover .drop-down-content {
+  display: flex;
+  flex-flow: column;
+  z-index: 99;
+}
+.drop-down-content ul {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  font-size: medium;
+  /* justify-items: left; */
+  align-items: self-start;
+  flex-flow: column;
+  padding: 1rem;
+}
+.drop-down-content ul li {
+  border-bottom: 1px solid #333;
+  padding: 0.3rem;
+}
+.drop-down-content ul li:hover {
+  background: #333;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 0.3rem;
+}
+/* .list-content {
+  display: flex;
+  flex-flow: column;
+} */
+
+/* mobile navbar */
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  color: #222;
+}
+.mobile-nav {
+  display: none;
+  width: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.mobile-nav-container {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-nav-container a {
+  border-bottom: 1px solid #ccc;
+}
+.accordion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1px;
+  background-color: white;
+  /* border: 1px solid #ccc; */
+}
+.mobile-nav h1 {
+  font-size: 3rem;
+}
+/* .accordion button {
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.4s ease;
+} */
+.accordion-button {
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.4s ease;
+}
+
+/* .accordion-button:hover {
+  background-color: #ccc;
+} */
+
+.accordion-content {
+  display: none;
+  flex-direction: column;
+
+  padding: 10px;
+  /*  background-color: white; */
+  /* border-top: 1px solid #ccc; */
+}
+
+>>>>>>> origin/arpan
  
 body{
     background-color: #416894;
@@ -17,6 +191,17 @@ section{
     padding:5%;
 
 }
+<<<<<<< HEAD
+=======
+section h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000000;
+  color:rgb(18, 52, 82);
+
+}
+>>>>>>> origin/arpan
 
 .container {
     position: relative;
@@ -27,6 +212,7 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+<<<<<<< HEAD
     font-size: 50px;
     color:blanchedalmond;
     display:inline-block;
@@ -35,6 +221,17 @@ section{
 
   .center:hover{
     font-size:60px;
+=======
+    font-size: 60px;
+    color:blanchedalmond;
+    display:inline-block;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+  }
+
+  .center:hover{
+    font-size:70px;
+>>>>>>> origin/arpan
     display: inline;
   }
   
@@ -46,6 +243,7 @@ section{
     object-fit: cover;
     opacity: 0.7;
   }
+<<<<<<< HEAD
   #column{
     column-count: 2;
     font-size:large;
@@ -73,21 +271,121 @@ section{
     text-align: center;
     font-weight: bold;
   }
+=======
+  .column{
+    column-count: 2;
+    font-size:large;
+    padding-left: 20%;
+    height: auto;
+  }
+  section h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+    color:rgb(18, 52, 82);
+  }
+/*
+  .science{
+    padding: 5%;
+    background-color:#416894;
+    margin: 2%;
+    width:40%;
+  }
+
+  h3.science{
+    font-size: larger;
+    font-weight: bold;
+  }
+  .management{
+    padding: 5%;
+    background-color:#416894;
+    margin: 2%;
+    width:40%;
+  }
+    */
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: #f1f1f1;
+      padding-top: 5%;
+    }
+    
+    .flex-container .box {
+      background-color: #416894;
+      width: 30%;
+      margin: 2%;
+      text-align: center;
+      line-height: auto;
+      font-size: 20px;
+      border-radius: 5%;
+    }
+    .flex-container .box h3{
+      padding-bottom: 5%;
+      padding-top: 5%;
+    }
+    .flex-container .box p{
+      font-style: normal;
+      padding:5%
+    }
+
+>>>>>>> origin/arpan
   .text{
     column-count: 2;
     padding-top:5%;
   }
   .text img{
+<<<<<<< HEAD
     width:400px;
     height:400px;
     object-fit: cover;
+=======
+    float:right;
+    width: 300px;
+    height: auto;
+    padding-bottom:5%;
+    padding-right: 5%;
+
+  }
+  .text p{
+    background-color: #416894;
+    border-radius: 5%;
+    padding: 5%;
+    font-size:20px;
+  }
+
+  #copy{
+    padding-top: 1%;
+    display:flex;
+    justify-content: center;
+>>>>>>> origin/arpan
   }
 /*footer*/
   footer{
     background-color: white;
+<<<<<<< HEAD
     height:30%;
     padding-top:10%;
 }
 footer p{
     text-align: center;
 }
+=======
+    height:20%;
+    padding-top:5%;
+}
+footer p{
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      display: none;
+    }
+  
+    .container {
+      display: inline-block;
+    }
+  }
+  
+>>>>>>> origin/arpan
