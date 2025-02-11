@@ -263,9 +263,12 @@ main {
     height: auto;
     background-color: #f0fefe;
     padding: 65px 5px 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cardfaculty {
+.cardfaculty{
     width: 100%;
     height: auto;
     display: grid;
@@ -273,9 +276,29 @@ main {
     place-items: center;
     row-gap: 80px;
     grid-template-rows: auto !important;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
 }
-
+.containerSideSliderLeft, .containerSideSliderRight{
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: rgba(193, 237, 250, 0.536);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px 0.1px black;
+    position: absolute;
+    z-index: 998 !important;
+    cursor: pointer;
+}
+.containerSideSliderLeft{
+    left: 0;
+    margin: 0 10px;
+}
+.containerSideSliderRight{
+    right: 0;
+    margin: 0 10px;
+}
 .card1 {
     width: auto;
     height: 350px;
@@ -291,7 +314,11 @@ main {
     padding: 10px;
     margin: 0 5px;
 }
-
+@media screen and (max-width:360px) {
+    .card1{
+        width:  340px;
+    }    
+}
 .fprofilepic {
     display: flex;
     justify-content: center;
@@ -324,6 +351,7 @@ main {
 }
 
 .fdesc {
+    padding: 18px;
     text-align: justify;
     text-justify: inter-character !important;
 }
