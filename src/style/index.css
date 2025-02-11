@@ -196,6 +196,7 @@ main {
   background-image: url("/images/background.jpeg"); /* Ensure the file path is correct */
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   height: calc(
     100vh - 100px
   ); /* Replace 100px with the actual height of your header */
@@ -228,9 +229,81 @@ main {
   background-color: rgba(71, 58, 41, 0.114);
 }
 
+#read-more {
+  display: none;
+}
+#button-text {
+  padding: 1rem 2rem;
+}
+
+#button-text:hover {
+  background-color: #333;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
 /* Features */
-.features {
-  padding: 2rem;
+
+.slider {
+  flex-direction: column;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+  width: 50vw;
+  height: 50vh;
+  /* padding: 2rem 2rem; */
+  border-radius: 10px;
+  background-color: rgba(194, 181, 163, 0.477);
+}
+
+.slide {
+  /* padding: 2rem; */
+  border-radius: 10px;
+  width: 60vw;
+  height: 60vh;
+}
+.slide img {
+  width: 60vw;
+  height: 60vh;
+  /* height: 50vh; */
+  border-radius: 10px;
+}
+.image-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#message-from-principal {
+  margin-top: 3rem;
+}
+#message-container {
+  background-color: rgba(19, 19, 88, 0.584);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  color: whitesmoke;
+}
+
+#message-container img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.principal-words {
+  font-size: clamp(1rem, 5vw, 2rem);
 }
 
 /* Footer */
@@ -239,6 +312,7 @@ main {
   color: #fff;
   text-align: center;
   padding: 10px 20px;
+  margin-top: 3rem;
 }
 
 .footer p {
@@ -249,6 +323,18 @@ main {
 @media screen and (max-width: 768px) {
   .navbar {
     display: none;
+  }
+  .slider {
+    padding: 2rem 0rem;
+  }
+  .slider img {
+    width: 80vw;
+    height: 40vh;
+    /* height: 100%; */
+  }
+  .slide {
+    width: 80vw;
+    height: 40vh;
   }
 
   .container {

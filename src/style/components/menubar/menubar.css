@@ -1,4 +1,4 @@
-.container {
+.menu-container {
   display: inline-block;
   cursor: pointer;
 }
@@ -26,7 +26,11 @@
 }
 
 @media (min-width: 768px) {
-  .container {
+  .menu-container {
+    display: none;
+  }
+
+  .mobile-nav {
     display: none;
   }
 
