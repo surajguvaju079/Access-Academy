@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style/tuition.css">
+    <title>Tuition</title>
+</head>
+<body>
+    <header>
+            <div>
+              <img src="/images/logo-removebg-preview.png" alt="Access Academy" />
+              <h1>ACCESS ACADEMY</h1>
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </div>
+      
+            <!-- Mobile View -->
+      
+            <div class="mobile-nav">
+              <div class="mobile-nav-container">
+                <a href="/"><h1>Home</h1></a>
+                <a href="/src/pages/gallery.html"><h1>Gallery</h1></a>
+                <div class="accordion">
+                  <button class="accordion-button">
+                    <div>
+                      <h1>Programmes</h1>
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                  </button>
+                  <div class="accordion-content">
+                    <a href="/src/pages/programmes/openschool.html">Open School</a>
+                    <a href="/src/pages/programmes/bridgecourse.html"
+                      >Bridge Course</a
+                    >
+                    <a href="/src/pages/programmes/tuition.html">Tuition</a>
+                  </div>
+                </div>
+      
+                <a href="/src/pages/faculty.html"><h1>Faculty</h1></a>
+                <a href="/src/pages/notes.html"><h1>Notes</h1></a>
+              </div>
+            </div>
+            <!-- Desktop View -->
+            <div class="navbar">
+              <nav>
+                <ul>
+                  <li class="nav-link"><a href="/">Home</a></li>
+                  <li class="nav-link">
+                    <a href="/src/pages/gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-link">
+                    <!-- <a href="/src/pages/programmes">Programmes</a> -->
+                    <div>
+                      <div class="drop-down">
+                        Programmes
+                        <div class="drop-down-content">
+                          <ul class="list-content">
+                            <li>
+                              <a href="/src/pages/programmes/openschool.html"
+                                >Open School</a
+                              >
+                            </li>
+                            <li>
+                              <a href="/src/pages/programmes/bridgecourse.html"
+                                >Bridge Course</a
+                              >
+                            </li>
+                            <li>
+                              <a href="src/pages/programmes/tuition.html">Tuition</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- <li><a href="/src/pages/contact.html">Contact</a></li> -->
+                  <li class="nav-link">
+                    <a href="/src/pages/faculty.html">Faculty</a>
+                  </li>
+                  <li class="nav-link"><a href="/src/pages/notes.html">Notes</a></li>
+                </ul>
+              </nav>
+            </div>
+    </header>
+    <main>
+       <h1 class="maintitle">Courses offered</h1>
+       <!--class 11-->
+       <h2 class="subheading1">Class 11</h2>
+       <div class="card-container">
+         <!-- First Card -->
+         <div class="card">
+            <img src="/images/download (1).jpeg"
+                alt="Card image" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">
+                  Science
+                </h2>
+                <p>
+                  We provide science tuition for all science subjects of 11 grade.
+                </p>
+                <button class="card-button" onclick="toggleModal(1)">
+                    Read More...
+                </button>
+            </div>
+          </div>
+           <!-- Second Card -->
+           <div class="card">
+            <img src="/images/th (2).jpeg" alt="Card image" class="card-img">
+              <div class="card-content">
+                <h2 class="card-title">
+                    Management
+                 </h2>
+                      <p>
+                        We provide management tuition for all management subjects of 11 grade.
+                      </p>
+                      <button class="card-button" onclick="toggleModal(2)">
+                          Read More...
+                      </button>
+              </div>
+            </div>
+        </div>
+        
+<!-- Modal 1 -->
+<div id="modal-1" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal(1)">
+          &times;
+      </span>
+      <h2 class="extra-heading">
+          Subjects Offered:
+      </h2>
+      <ul class="extra-paragraph">
+          <li>Physics</li>
+          <li>Chemistry</li>
+          <li>Maths</li>
+          <li>Biology</li>
+      </ul>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal-2" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal(2)">
+          &times;
+      </span>
+      <h2 class="extra-heading">
+        Subjects Offered:
+      </h2>
+      <ul class="extra-paragraph">
+          <li>Business</li>
+          <li>Account</li>
+      </ul>
+  </div>
+</div>
+<!--class 12-->
+<h2 class="subheading2">Class 12</h2>
+<div class="card-container">
+  <!-- First Card -->
+  <div class="card">
+     <img src="/images/download (1).jpeg"
+         alt="Card image" class="card-img">
+     <div class="card-content">
+         <h2 class="card-title">
+           Science
+         </h2>
+         <p>
+           We provide science tuition for all science subjects of 12 grade.
+         </p>
+         <button class="card-button" onclick="toggleModal(3)">
+             Read More...
+         </button>
+     </div>
+   </div>
+    <!-- Second Card -->
+    <div class="card">
+     <img src="/images/th (2).jpeg" alt="Card image" class="card-img">
+       <div class="card-content">
+         <h2 class="card-title">
+             Management
+          </h2>
+               <p>
+                 We provide management tuition for all management subjects of 12 grade.
+               </p>
+               <button class="card-button" onclick="toggleModal(4)">
+                   Read More...
+               </button>
+       </div>
+     </div>
+ </div>
+ 
+<!-- Modal 3 -->
+<div id="modal-3" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal(3)">
+   &times;
+</span>
+<h2 class="extra-heading">
+   Subjects Offered:
+</h2>
+<ul class="extra-paragraph">
+   <li>Physics</li>
+   <li>Chemistry</li>
+   <li>Maths</li>
+   <li>Biology</li>
+    <li>Computer</li>
+    <li>Nepali</li>
+</ul>
+</div>
+</div>
+
+<!-- Modal 4 -->
+<div id="modal-4" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal(4)">
+   &times;
+</span>
+<h2 class="extra-heading">
+ Subjects Offered:
+</h2>
+<ul class="extra-paragraph">
+   <li>Business</li>
+   <li>Account</li>
+   <li>Economics</li>
+</ul>
+</div>
+</div>
+ </main>
+    <footer class="footer" id="footer">
+        <p>Email: support@squarelearn.com | Phone: +977 0156432 9841951005</p>
+      </footer>
+      <script src="/src/script/card.js"></script>
+</body>
+</html>
